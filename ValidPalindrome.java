@@ -20,8 +20,8 @@ public class ValidPalindrome {
 
     public static String reduced_string(String s) {
         s=s.trim().toLowerCase();
-        s = s.replaceAll("\\s+","");
-        s = s.replaceAll("[^a-zA-Z0-9]", "");
+        s = s.replaceAll("\\s+",""); // NOTE
+        s = s.replaceAll("[^a-zA-Z0-9]", ""); // NOTE
         return s;
     }
     public static boolean brute_force(String s) {
